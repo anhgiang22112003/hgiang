@@ -1,5 +1,7 @@
+import { useState, useEffect } from "../lib";
+import header from "./comprent/header";
 
-import { useEffect, useState } from "../lib"
+
 
 const homePage = function ()
 {
@@ -43,26 +45,7 @@ const homePage = function ()
         <!-- header -->
         <header>
             <div class="container">
-                <div id="app">
-                    <nav class="navbar">
-                        <!-- logo -->
-                        <div class="navbar__logo">
-                            <img src="./img/logo.svg" alt="website logo" />
-                        </div>
-                        <!-- links -->
-                        <ul class="navbar__links" id="app">
-
-                            <li class="navbar__link"><a href="#productWorks">Work</a></li>
-                            <li class="navbar__link"><a href="#things">About</a></li>
-                            <li class="navbar__link"><a href=" ">Blog</a></li>
-                            <a href="#contact"><button class="navbar__btn">Contact</button></a>
-                        </ul>
-                        <!-- menu button -->
-                        <div class="">
-                            <div class=""></div>
-                        </div>
-                    </nav>
-                </div>
+               ${ header() }
             </div>
         </header>
         <!-- banner -->

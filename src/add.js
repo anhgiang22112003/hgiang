@@ -29,7 +29,10 @@ const add = function ()
             const nam = document.querySelector( '#nam' ).value
             const text = document.querySelector( '#text' ).value
             const image = document.querySelector( '#image' )
-
+            console.log( name );
+            console.log( nam );
+            console.log( text );
+            console.log( image );
             const newUser = {
 
                 "nam": nam,
@@ -43,7 +46,7 @@ const add = function ()
                 },
                 body: JSON.stringify( newUser )
             } )
-            // window.location.href = "/"
+            window.location.href = "/"
         } )
     } );
     const uploadfile = ( files ) =>

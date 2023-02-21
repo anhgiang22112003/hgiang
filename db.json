@@ -22,6 +22,25 @@
       "name": "du an 11 "
     }
   ],
+  "menu": [
+    {
+      "title": "work",
+      "link": "#productWorks"
+    },
+    {
+      "title": "about",
+      "link": "#about"
+    },
+    {
+      "title": "blog",
+      "link": "#productWorks"
+    },
+    {
+      "title": "contact",
+      "link": "#contact"
+    }
+  ],
+
   "post": [
     {
       "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",

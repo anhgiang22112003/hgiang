@@ -30,11 +30,13 @@ import add from './src/add';
 import './style.css'
 import xoa from './src/xoa';
 import homePage from './src/home';
+import header from './src/comprent/header';
 
 // Khai bao DOM
 var app = document.querySelector( "#app" )
 router.on( "/page/add", () => render( add, app ) )
 router.on( "/blog", () => render( blog, app ) )
+router.on( "/menu", () => render( header, app ) )
 router.on( "/create", () => render( create, app ) )
 // router.on( "/", () => render( demo, app ) )
 router.on( "/", () => render( homePage, app ) )
