@@ -28,12 +28,12 @@ const header = function ()
     {
         return `
                         
-                                 <ul class="navbar__links" id="app">
-
-                                   
-                                     <a href="${ data.link }"><button class="navbar__btn">${ data.title }</button></a>
-                                 </ul>
-                        ` } ) }
+                                <ul class="navbar__links">
+            <li class="navbar__link"><a href="${ data.link }">${ data.nav }</a></li>
+          
+            <a href="${ data.link }"><button class="navbar__btn">${ data.title }</button></a>
+          </ul>
+                        ` } ).join( "" ) }
                         <!-- menu button -->
                         <div class="">
                             <div class=""></div>

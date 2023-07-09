@@ -31,10 +31,13 @@ import './style.css'
 import xoa from './src/xoa';
 import homePage from './src/home';
 import header from './src/comprent/header';
-
+import footer from './src/comprent/contact';
+import login from './src/comprent/singin';
 // Khai bao DOM
 var app = document.querySelector( "#app" )
 router.on( "/page/add", () => render( add, app ) )
+router.on( "/page/footer", () => render( footer, app ) )
+router.on( "/login", () => render( login, app ) )
 router.on( "/blog", () => render( blog, app ) )
 router.on( "/menu", () => render( header, app ) )
 router.on( "/create", () => render( create, app ) )

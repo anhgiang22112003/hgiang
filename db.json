@@ -4,50 +4,90 @@
       "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",
       "id": 1,
       "nam": "2020",
-      "name": "dự án 2",
-      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+      "name": "112",
+      "cv": "javascript",
+      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.\""
     },
     {
       "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",
       "id": 2,
       "nam": "2020",
-      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "name": "dự án 1"
+      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.\"\"",
+      "name": "dự án 1",
+      "cv": "react"
     },
     {
       "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",
       "id": 3,
       "nam": "2003",
       "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "name": "du an 11 "
+      "name": "du an 11 ",
+      "cv": "php"
+    },
+    {
+      "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",
+      "nam": "",
+      "name": "",
+      "cv": "javascript",
+      "text": "\"",
+      "id": 4
     }
   ],
   "menu": [
     {
-      "title": "work",
-      "link": "#productWorks"
+      "nav": "work",
+      "link": "#productWorks",
+      "title": ""
     },
     {
-      "title": "about",
-      "link": "#about"
+      "nav": "about",
+      "link": "#about",
+      "title": ""
     },
     {
-      "title": "blog",
-      "link": "#productWorks"
+      "nav": "blog",
+      "link": "#blog",
+      "title": ""
     },
     {
       "title": "contact",
-      "link": "#contact"
+      "link": "#contact",
+      "nav": ""
     }
   ],
-
+  "about": [
+    {
+      "id": "1",
+      "img": "./316267351_584000617061638_1848260812688891873_n.jpg",
+      "list": "Tôi đang là sinh viên kì 5 của trường Cao Đẳng FPT POLYTECHNICH chuyên ngành thiết kế WEBSITEthời gian chủ yếu là mình tự học mình thường tự học trên f8 hoặc là trên các nền tảng youtube Mình thực sự thích code và thử thách bản thân học được nhiều cái mới vào mỗi ngày mới. Mục tiêu hiện tại của mình là trở thành một lập trình viên Frontend."
+    }
+  ],
+  "footer": [
+    {
+      "control": "liên hệ với mình ",
+      "phone": "0343887327",
+      "gmail": "honggiang22112003@gmail.com"
+    }
+  ],
+  "login": [
+    {
+      "id": "1",
+      "name": "admin",
+      "password": "admin",
+      "role": "Admin"
+    },
+    {
+      "id": "2",
+      "name": "user",
+      "password": "user",
+      "role": "User"
+    }
+  ],
   "post": [
     {
-      "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",
-      "id": 1,
-      "nam": "2022",
-      "text": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "name": "dự án 3"
+      "gt": "Hello, i am giang",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aest culpa soluta modi beatae unde incidunt dolorem placeat maiores?",
+      "rename": "https://drive.google.com/file/d/1a-87_FTKai1j6WUVFqrEw1QSrzOEOqd5/view"
     }
   ]
 }

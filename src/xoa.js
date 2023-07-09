@@ -39,6 +39,7 @@ const xoas = function ()
     } )
 
     return /*html*/`
+    <button ><a id="button" href ="/">home</a></button>
         <table>
        <thead>
     <tr>
@@ -59,10 +60,11 @@ const xoas = function ()
   <td>${ data.text }</td>
   <td>
   <button data-id="${ data.id }" class="btn btn-danger btn-remove" >xóa </button>
+
   </td>
   
   </tr>
-  `) }
+  `).join( "" ) }
   
   
   

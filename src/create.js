@@ -1,7 +1,10 @@
 import { useEffect, useState } from "../lib";
+import checkRole from "./comprent/checkRole"
 
 const create = function ()
 {
+
+    checkRole()
     const urlParams = new URLSearchParams( window.location.search );
     const id = urlParams.get( 'id' )
 
@@ -45,33 +48,6 @@ const create = function ()
     } )
 
     console.log( data );
-    const uploadfile = ( files ) =>
-    {
-        const clouName = "dbahu9bvi";
-        const preset_name = "demo-upload";
-        const folder_name = "ecma";
-        const url = [];
-        const api = `https://api.cloudinary.com/v1_1/${ clouName }/image/upload`;
-        const formData = new FormData();// key value 
-        formData.append( "upload_preset", preset_name )
-        formData.append( "folder", folder_name )
-        for ( const file of files )
-        {
-            formData.append( "file", file )
-            fetch( "http://localhost:3000/users", {
-                method: "POST",
-
-                headers: {
-                    "Content-Type": "mutipart/form-data"
-                },
-                body: JSON.stringify( formData )
-
-
-            } ).then( ( response ) => url.push( response.data.secure_url ) );
-
-        }
-        return url;
-    }
 
     return /*html*/`
     <style>
@@ -90,10 +66,11 @@ const create = function ()
 
     </style>
     <div>
-        <p>anh:<input type="file" name="avatar"  multiple id="image" value="${ data.image }"  required />
-        <p>tên: <input id="name" type="text" class="border"  value="${ data.name }"/></p>
-        <p>năm: <input id="nam" type="text" class="border"  value="${ data.nam }"/></p>
-        <p>giới thiệu:<input id="text" type="text" class="border"  value="${ data.text }"/></p>
+       <button ><a id="button" href ="/">home</a></button>
+        <p class="w-[300px] mx-auto">ẢNH:<img class=" "  name="avatar"  multiple id="image" src="${ data.image }"  required /> </p>
+        <p>TÊN: <input class="w-[400px]" id="name" type="text" class="border"  value="${ data.name }"/></p>
+        <p>NĂM: <input id="nam" class="w-[400px]" type="text" class="border"  value="${ data.nam }"/></p>
+        <p>GIỚI THIỆU:<textarea class="w-[400px]" id="text" type="text" class="border">${ data.text }"</textarea></p>
         <button id="btn_update">sửa</button>
         <button ><a id="button" href ="/xoa">xóa</a></button>
         <button ><a id="button" href ="/page/add">thêm</a></button>

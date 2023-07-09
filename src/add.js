@@ -28,19 +28,19 @@ const add = function ()
             const name = document.querySelector( '#name' ).value
             const nam = document.querySelector( '#nam' ).value
             const text = document.querySelector( '#text' ).value
-            const image = document.querySelector( '#image' )
-            console.log( name );
-            console.log( nam );
-            console.log( text );
-            console.log( image );
-            const newUser = {
+            // const image = document.querySelector( '#image' )
 
+            // console.log( image );
+            const newUser = {
+                "image": "https://res.cloudinary.com/dndyxqosg/image/upload/v1654352556/Rectangle_30_z5qfxs.jpg",
                 "nam": nam,
                 "name": name,
-                "text": text,
+                "cv": "javascript",
+                "text": text
+
             }
             fetch( "http://localhost:3000/users", {
-                method: "PUT",
+                method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
@@ -49,33 +49,33 @@ const add = function ()
             window.location.href = "/"
         } )
     } );
-    const uploadfile = ( files ) =>
-    {
-        const clouName = "dbahu9bvi";
-        const preset_name = "demo-upload";
-        const folder_name = "ecma";
-        const url = [];
-        const api = `https://api.cloudinary.com/v1_1/${ clouName }/image/upload`;
-        const formData = new FormData();// key value 
-        formData.append( "upload_preset", preset_name )
-        formData.append( "folder", folder_name )
-        for ( const file of files )
-        {
-            formData.append( "file", file )
-            fetch( "http://localhost:3000/users", {
-                method: "POST",
+    // const uploadfile = ( files ) =>
+    // {
+    //     const clouName = "dbahu9bvi";
+    //     const preset_name = "demo-upload";
+    //     const folder_name = "ecma";
+    //     const url = [];
+    //     const api = `https://api.cloudinary.com/v1_1/${ clouName }/image/upload`;
+    //     const formData = new FormData();// key value 
+    //     formData.append( "upload_preset", preset_name )
+    //     formData.append( "folder", folder_name )
+    //     for ( const file of files )
+    //     {
+    //         formData.append( "file", file )
+    //         fetch( "http://localhost:3000/users", {
+    //             method: "POST",
 
-                headers: {
-                    "Content-Type": "mutipart/form-data"
-                },
-                body: JSON.stringify( formData )
+    //             headers: {
+    //                 "Content-Type": "mutipart/form-data"
+    //             },
+    //             body: JSON.stringify( formData )
 
 
-            } ).then( ( response ) => url.push( response.data.secure_url ) );
+    //         } ).then( ( response ) => url.push( response.data.secure_url ) );
 
-        }
-        return url;
-    }
+    //     }
+    //     return url;
+    // }
 
 
 
